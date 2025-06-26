@@ -1,0 +1,14 @@
+#!name= CAPCUTPRO ( Lưu Ý phải đăng nhập TK cấp mới lên GOLD )
+#!desc= Hoàng Nam
+# Shadowrocket Configuration - Alight Motion
+# Cập nhật: 2025-06-26
+# Bản Quyền Thuộc Về HOÀNG NAM ❤️‍🩹
+# Tham Gia Nhóm Telegram: https://t.me/shadowrocketunlockproapps
+
+[Script]
+
+SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path= https://raw.githubusercontent.com/quocchienn/Make/refs/heads/crack/soundcloud.js
+
+[MITM]
+
+hostname= %APPEND% api-mobile.soundcloud.com
