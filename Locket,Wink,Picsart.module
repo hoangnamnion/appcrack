@@ -1,3 +1,4 @@
+#!url=https://raw.githubusercontent.com/hoangnamnion/appcrack/refs/heads/main/Locket,Wink,Picsart.module
 #!name=Locket,Wink,Picsart Pro
 #!desc=By: Hoàng Nam
 
@@ -7,12 +8,13 @@ skip-proxy = *.local, *.crashlytics.com
 tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
 
 [MITM]
-hostname = api.revenuecat.com, buy.itunes.apple.com, api.picsart.com, api.adapty.io, carrotweather.herokuapp.com, lcs-mobile-cops.adobe.io, order.creativeappnow.com, api.mwm-users.com, prod.studysmarter.de, api.qonversion.io, api.blinkist.com, subscription.grammarly.com, api-sub.meitu.com , photos.adobe.io
+hostname = api.revenuecat.com, buy.itunes.apple.com, api.picsart.com, api.adapty.io, carrotweather.herokuapp.com, lcs-mobile-cops.adobe.io, order.creativeappnow.com, api.mwm-users.com, prod.studysmarter.de, api.qonversion.io, api.blinkist.com, subscription.grammarly.com, api-sub.meitu.com , photos.adobe.io , hostname = %APPEND% api-sub.meitu.com
 
 [Script]
 http-response ^https://api\.revenuecat\.com/.+/(receipts$|subscribers/[^/]+$) script-path=https://N9dev-dev.github.io/SL/scripts/ARC.js, requires-body=true, timeout=5, tag=iSteal
 http-request https://api.picsart.com/gw-v2/shop/subscription/apple/purchases script-path=https://N9dev-dev.github.io/SL/scripts/PicsArt.js, requires-body=true, timeout=5, tag=PicsArt
-http-request https://lcs-mobile-cops.adobe.io/mobiles/access_profile/v3 script-path=https://raw.githubusercontent.com/quocchienn/Make/refs/heads/crack/Lightroom.js, requires-body=true, timeout=5, tag=Lightroom
+http-request https://lcs-mobile-cops.adobe.io/mobiles/access_profile/v3 script-path=https://raw.githubusercontent.com/quocchienn/Make/refs/heads/crack/Lightroom.js, requires-body=true, timeout=5, tag=Lightroom,
+WinkForeverVipCrack.js=type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WinkForeverVipCrack.js
 revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/quocchienn/lockcrack/refs/heads/module/Locket_Gold.js, requires-body=true, max-size=-1, timeout=60
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/quocchienn/lockcrack/refs/heads/module/deleteheader.js, timeout=60
 WinkVipCrack.js=type=http-response,pattern=^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json,requir
